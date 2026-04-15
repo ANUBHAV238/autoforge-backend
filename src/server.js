@@ -31,7 +31,7 @@ app.use('/api/quotations', require('./routes/quotation.routes'));
 app.use('/api/categories', require('./routes/category.routes'));
 
 // Health check
-app.get('/api/health', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ 
     status: 'OK', 
     message: 'Autoforge API is running',
